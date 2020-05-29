@@ -37,12 +37,16 @@
             font-size: 34px;
             text-align: center;
             margin-top: 85px;
-            {% if container_version in ["v1","v4","v7","v10"] %}
+            {% if container_version in ["v1"] %}
             background-image: url("static/images/image01-1600.jpeg");
-            {% elif container_version in ["v2","v5","v8","v11"] %}
+            {% elif container_version in ["v2"] %}
             background-image: url("static/images/image02-1600.jpeg");
-            {% elif container_version in ["v3","v6","v9","v12"] %}
-            background-image: url("static/images/image03-1600.jpeg"); */
+            {% elif container_version in ["v3"] %}
+            background-image: url("static/images/image03-1600.jpeg");
+            {% elif container_version in ["v4"] %}
+            background-image: url("static/images/image04-1280.png");
+            {% elif container_version in ["v5"] %}
+            background-image: url("static/images/image05-1280.png");
             {% endif %}
             background-repeat: no-repeat;
             background-position: center;
